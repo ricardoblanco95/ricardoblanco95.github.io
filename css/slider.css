@@ -24,7 +24,6 @@
 
 .slides img{
 	width: 100%;
-	height: 200vw;
 }
 
 .slides,
@@ -108,7 +107,7 @@
 
 .caption div{
 	position: absolute;
-	top: 15vw;
+	top: 12vw;
 	width: 100%;
 }
 
@@ -134,7 +133,7 @@
 
 .caption p{
 	font-family: "raleway";
-	font-size: 15px;
+	font-size: 1.8vw;
 	padding: 0 10%;
 	position: absolute;
 	text-align: center;
