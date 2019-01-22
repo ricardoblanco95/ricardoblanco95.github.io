@@ -1,4 +1,9 @@
-/*TEMPLATE CSS CODE*/
+			/*------TEMPLATE CSS CODE*------*/
+
+/*SCROLL BEHAVIOR*/			
+html{scroll-behavior: smooth;}
+
+/*---------------------------------------------------------------*/
 
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -87,6 +92,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
+/*AGREGADO :not EN .w3-hide-small*/
 @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
 .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
 .w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
@@ -237,4 +243,40 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /*---------------------------------------------------------------*/
 
 /*RESPONSIVE NAVBAR STYLING*/ 
+.dropdownMenu{
+	display: none;
+}
 
+.dropdownIcon{
+	display: none;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+	.dropdownMenu{
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #4a4a4a;
+		border-left: 1px solid #4a4a4a;
+		border-right: 1px solid #4a4a4a;
+		box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+	}
+
+	.dropdownMenu div {
+		padding: 10px;
+		border-bottom: 1px solid #4a4a4a;
+		background: white;
+		text-decoration: none;
+		text-align: center;
+		user-select: none;
+	}
+ 
+	.dropdownIcon{
+		display: block;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 0; 
+		padding: 8px 16px;
+	}
+}
