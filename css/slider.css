@@ -24,6 +24,7 @@
 
 .slides img{
 	width: 100%;
+	height: 200vw;
 }
 
 .slides,
@@ -105,15 +106,46 @@
 	content: '\f002';
 }
 
-.caption p{
+.caption div{
 	position: absolute;
-	top: 50%;
+	top: 15vw;
+	width: 100%;
+}
+
+.caption div img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30vw;
+	width: 30vw;
+}
+
+.caption #name{
+	display: block;
+	font-family: "raleway";
+	font-size: 4vw;
+	text-shadow: 2px 2px 0.8px black;
+	position: absolute;
+	bottom: 50%;
+	color: white;
 	text-align: center;
 	width: 100%;
-	font-size: 65px;
-	color: white;
-	font-weight: bold;
+}
 
+.caption p{
+	font-family: "raleway";
+	font-size: 15px;
+	padding: 0 10%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+#imgChild{ 
+	position: relative;
+	background: red;
+	top: 60px;
 }
 
 .slider:hover .flex-direction-nav .flex-prev{
@@ -133,3 +165,10 @@
 .slider:hover .flex-direction-nav .flex-next:hover{
 	opacity: 1;
 }
+
+@media screen and (max-width: 600px){
+	.caption div img{
+		height: 150px;
+		width: 150px;
+	}
+}	

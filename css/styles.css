@@ -268,7 +268,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 		background: white;
 		text-decoration: none;
 		text-align: center;
-		user-select: none;
+		user-select: none; 
 	}
  
 	.dropdownIcon{
@@ -280,3 +280,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 		padding: 8px 16px;
 	}
 }
+ 
