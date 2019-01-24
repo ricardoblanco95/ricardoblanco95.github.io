@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/styles.css" type="text/css">
 <link rel="stylesheet" href="css/slider.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script type="text/javascript" src='js/script.js'></script>
 <script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
+  $(document).ready(function() {
     $('.slider').flexslider({
       touch: true,
       pauseOnAction: false,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
@@ -82,21 +83,67 @@
   </div>
 
 <!-- Header -->
+<!--
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="https://www.w3schools.com/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
   </div>
 </header>
+-->
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  <!-- Studies -->
+  <div class="w3-container w3-padding-32 titles" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- ESTUDIOS -&gt;</h3>
   </div>
-
+  <div class="container">
+    <div class="row estudios">
+     <div class="col-sm-6">
+       <h3>
+         ESTUDIOS UNIVERSITARIOS
+       </h3>
+       <img src="img/uc.png">
+     </div> 
+     <div class="col-sm-6">
+       <ul>
+         <li>
+           <span class="location">UNIVERSIDAD DE CARABOBO (2012-2018)</span>
+           <br>
+           <span class="description">Ingeniero Electricista (mención Sistemas y Automática)
+           egresado de la Universidad de Carabobo en Venezuela.</span>
+         </li>
+       </ul>
+     </div>
+    </div>
+    <div class="row estudios" style="margin-top: 20px;">
+     <div class="col-sm-6">
+       <h3>
+         ESTUDIOS ADICIONALES
+       </h3>
+       <img src="img/fcc.jpg" height="171px" width="171px">
+     </div> 
+     <div class="col-sm-6">
+       <ul>
+         <li>
+           <span class="location">FRONT END DEVELOPMENT (2017)
+            - FREECODECAMP</span>
+         </li>
+         <li>
+           <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
+            NIVEL BÁSICO (2018) - CENTECPRO VALENCIA</span>
+         </li>
+         <li>
+           <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
+            NIVEL AVANZADO (2018) - CENTECPRO VALENCIA</span>
+         </li>
+       </ul>
+     </div>
+    </div>
+  </div>
+<!--
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
@@ -150,10 +197,22 @@
       </div>
     </div>
   </div>
+-->
 
-  <!-- About Section -->
+  <!-- Projects Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- PROYECTOS -&gt;</h3>
+    <div class="container">
+      <div class="row">
+      <div>
+        <div class="col-md-2">
+          <img src="">
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <!--
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.
@@ -190,8 +249,9 @@
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
   </div>
+-->
 
-  <!-- Contact Section -->
+  <!-- CONTACT SECTION -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
