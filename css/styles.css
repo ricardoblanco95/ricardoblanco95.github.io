@@ -283,7 +283,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*SECTIONS STYLING*/
 .titles{
-	color:#00056C;
+	color: #00056C;
 	text-align: center;
 	font-size: 50px;
 }
@@ -320,9 +320,42 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	padding: 5px 0;
 }
 
+.typeOfProject{
+	margin-bottom: 30px
+}
+
+.container h3{
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.col-sm-6 img, .col-sm-4 img, .websites img{
+	display: block;
+	margin: 0 auto;
+}
+
+.col-sm-6 h4, .col-sm-4 h4, .websites h4{
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	color: #00056C;
+	text-align: center;
+	text-decoration: none;
+}
+
+.col-sm-6 p, .col-sm-4 p, .websites p{
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+}
+
 @media screen and (max-width: 600px){
 	.titles{
-		font-size: 10vw;
+		font-size: 8vw;
+	}
+
+	.col-sm-6 img, .col-sm-4 img, .websites img {
+		display: block;
+		width: 100%;
 	}
 }
  

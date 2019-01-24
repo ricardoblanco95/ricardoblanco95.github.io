@@ -126,16 +126,16 @@
 	margin-top: 3px;
 	margin-bottom: 7px;
 	display: block;
-	font-family: "Verdana";
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
 	font-size: 3vw;
-	text-shadow: 2px 2px 0.8px black;
 	color: white;
 	text-align: center;
 	width: 100%;
 }
 
 .caption p{
-	font-family: "Verdana";
+	font-family: "Raleway", sans-serif;
 	font-size: 2.3vw;
 	padding: 0 10%;
 	position: absolute;

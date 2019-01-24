@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/styles.css" type="text/css">
 <link rel="stylesheet" href="css/slider.css" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"> 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.flexslider.js"></script>
@@ -24,10 +25,9 @@
 
 <body onresize="hideDropdownMenu()">
 
+<!--'En Construccion' advise (Bootstrap Modal)-->
 <div id="advise" class="modal fade" role="dialog" >
   <div class="modal-dialog">
-
-    <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">¡EN CONSTRUCCIÓN!</h3>
@@ -39,7 +39,6 @@
         <button type="button" class="btn btn-danger" data-dismiss="modal" style="display: block; margin: 0 auto;">Cerrar</button>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -160,55 +159,73 @@
   <!-- Projects Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- PROYECTOS -&gt;</h3>
-    <div class="container">
-      <div class="row">
-      <div>
-        <div class="col-md-2">
-          <img src="">
+      <div class="container">
+        <div class="typeOfProject">
+          <h3>
+          PROYECTOS INDIVIDUALES
+          </h3>
         </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/javascriptCalculator.png"> 
+            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Javascript Calculator</a></h4>
+            <p>
+              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
+              para el ajuste de los botones y pantalla. 
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/pomodoroClock.png">
+            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/">Pomodoro Clock</a></h4>
+            <p>
+              Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
+              ajustando sus atributos CSS según fuese necesario.
+            </p>
+          </div>
+        <div class="col-sm-4">
+            <img src="img/wikipediaViewer.png">
+            <h4><a href="https://ricardoblanco95.github.io/wikipediaViewer/">Wikipedia Viewer</a></h4>
+            <p>
+              Buscador de artículos de Wikipedia. Se dispone un campo de texto para introducir el nombre 
+              del artículo deseado y un botón llamado "GO RANDOM!" que abre en una nueva pestaña del navegador 
+              uno aleatorio.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+         <div class="col-sm-6">
+            <img src="img/ticTacToe.png"> 
+            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Tic Tac Toe</a></h4>
+            <p>
+              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
+              para el ajuste de los botones y pantalla. 
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="img/simonGame.png">
+            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/">Simon Game</a></h4>
+            <p>
+              Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
+              ajustando sus atributos CSS según fuese necesario.
+            </p>
+          </div>
+        </div>
+        <div class="typeOfProject">
+          <h3>
+            SITIOS WEB 
+          </h3>
+        </div>
+        <div class="websites">
+          <img src="img/portalS7.png"> 
+          <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Tic Tac Toe</a></h4>
+          <p>
+            Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
+            para el ajuste de los botones y pantalla. 
+          </p>
+        </div>  
       </div>
     </div>
-    </div>
-    
-    <!--
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
--->
-
+ 
   <!-- CONTACT SECTION -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
