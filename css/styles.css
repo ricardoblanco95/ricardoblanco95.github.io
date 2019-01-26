@@ -15,7 +15,7 @@ audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 a{background-color:transparent;-webkit-text-decoration-skip:objects}
 a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 dfn{font-style:italic}mark{background:#ff0;color:#000}
-small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+mdall{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
 button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
@@ -92,10 +92,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
-/*AGREGADO :not EN .w3-hide-small*/
+/*AGREGADO :not EN .w3-hide-mdall*/
 @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
 .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
-.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-hide-mdall{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
@@ -113,7 +113,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 .w3-display-position{position:absolute}
 .w3-circle{border-radius:50%}
-.w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
+.w3-round-mdall{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
 .w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
@@ -135,7 +135,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-greyscale-max,.w3-grayscale-max,.w3-hover-greyscale:hover,.w3-hover-grayscale:hover{filter:grayscale(100%)}
 .w3-greyscale,.w3-grayscale{filter:grayscale(75%)}.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(50%)}
 .w3-sepia{filter:sepia(75%)}.w3-sepia-max,.w3-hover-sepia:hover{filter:sepia(100%)}.w3-sepia-min{filter:sepia(50%)}
-.w3-tiny{font-size:10px!important}.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
+.w3-tiny{font-size:10px!important}.w3-mdall{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
 .w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}.w3-xxxlarge{font-size:48px!important}.w3-jumbo{font-size:64px!important}
 .w3-left-align{text-align:left!important}.w3-right-align{text-align:right!important}.w3-justify{text-align:justify!important}.w3-center{text-align:center!important}
 .w3-border-0{border:0!important}.w3-border{border:1px solid #ccc!important}
@@ -146,7 +146,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
 .w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
-.w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
+.w3-padding-mdall{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
@@ -321,31 +321,69 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .typeOfProject{
-	margin-bottom: 30px
+	margin-bottom: 30px;
 }
 
 .container h3{
 	font-family: "Raleway", sans-serif;
 	font-weight: bold;
+	font-size: 28px;
 	text-align: center;
 }
 
-.col-sm-6 img, .col-sm-4 img, .websites img{
+.trans{
+ 	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+.trans:hover{
+	background-color: #d3dae5;
+}
+
+.row.firstRow, .row.secondRow{
+	display: flex;
+	flex-wrap: wrap;
+}  
+
+.col-md-6 img, .col-md-4 img, .websites img{
 	display: block;
 	margin: 0 auto;
 }
 
-.col-sm-6 h4, .col-sm-4 h4, .websites h4{
+.col-md-6 h4, .col-md-4 h4, .websites h4, .websites h5{
 	font-family: "Raleway", sans-serif;
 	font-weight: bold;
 	color: #00056C;
 	text-align: center;
+}
+
+.col-md-6 h4 a, .col-md-4 h4 a, .websites h4 a{
 	text-decoration: none;
 }
 
-.col-sm-6 p, .col-sm-4 p, .websites p{
+.col-md-6 p, .col-md-4 p{
+	padding: 0 30px;
+}
+
+.websites p{
+	padding: 0 300px;
+}
+
+.col-md-6 p, .col-md-4 p, .websites p{
 	font-family: "Raleway", sans-serif;
 	text-align: center;
+}
+
+@media screen and (max-width: 768px){
+	.col-md-6 p, .col-md-4 p, .websites p{
+		padding: 0;
+	}
+	.row.secondRow{
+		display: initial;
+		flex-wrap: nowrap;
+	}  
 }
 
 @media screen and (max-width: 600px){
@@ -353,9 +391,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 		font-size: 8vw;
 	}
 
-	.col-sm-6 img, .col-sm-4 img, .websites img {
+	.col-md-6 img, .col-md-4 img, .websites img {
 		display: block;
 		width: 100%;
+	}
+
+	#logoUC{
+		width: 171px;
+		height: 215px;
+	}
+
+	#logoFCC{
+		width: 171px;
+		height: 171px;
 	}
 }
  

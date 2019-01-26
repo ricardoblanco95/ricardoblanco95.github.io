@@ -36,7 +36,7 @@
         <p>El portafolio aun se encuentra en desarrollo. Disculpe.</p>
       </div>
       <div class="modal-footer" style="width: 100%;">
-        <button type="button" class="btn btn-danger" data-dismiss="modal" style="display: block; margin: 0 auto;">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-dimdiss="modal" style="display: block; margin: 0 auto;">Cerrar</button>
       </div>
     </div>
   </div>
@@ -46,11 +46,11 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="#home" class="w3-bar-item w3-button" onclick="hideDropdownMenuOnClick()">RICARDO BLANCO</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div id="navBar" class="w3-right NONEw3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button w3-hide-small">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <!-- Float links to the right. Hide them on mdall screens -->
+    <div id="navBar" class="w3-right NONEw3-hide-mdall">
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-mdall">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-mdall">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-mdall">Contact</a>
       <a href="javascript:void(0)" class="dropdownIcon" onclick="responsiveNavBar()">&#9776;</a>
     </div>
   </div>
@@ -113,13 +113,13 @@
   </div>
   <div class="container">
     <div class="row estudios">
-     <div class="col-sm-6">
+     <div class="col-md-6">
        <h3>
          ESTUDIOS UNIVERSITARIOS
        </h3>
-       <img src="img/uc.png">
+       <img src="img/uc.png" id="logoUC">
      </div> 
-     <div class="col-sm-6">
+     <div class="col-md-6">
        <ul>
          <li>
            <span class="location">UNIVERSIDAD DE CARABOBO (2012-2018)</span>
@@ -131,13 +131,13 @@
      </div>
     </div>
     <div class="row estudios" style="margin-top: 20px;">
-     <div class="col-sm-6">
+     <div class="col-md-6">
        <h3>
          ESTUDIOS ADICIONALES
        </h3>
-       <img src="img/fcc.jpg" height="171px" width="171px">
+       <img src="img/fcc.jpg" height="171px" width="171px" id="logoFCC">
      </div> 
-     <div class="col-sm-6">
+     <div class="col-md-6">
        <ul>
          <li>
            <span class="location">FRONT END DEVELOPMENT (2017)
@@ -162,29 +162,29 @@
       <div class="container">
         <div class="typeOfProject">
           <h3>
-          PROYECTOS INDIVIDUALES
+             PROYECTOS INDIVIDUALES
           </h3>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="img/javascriptCalculator.png"> 
-            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Javascript Calculator</a></h4>
+        <div class="row firstRow">
+          <div class="col-md-4 trans">
+            <a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank"><img src="img/javascriptCalculator.png"></a> 
+            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank">Javascript Calculator</a></h4>
             <p>
-              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
+              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework Bootstrap
               para el ajuste de los botones y pantalla. 
             </p>
           </div>
-          <div class="col-sm-4">
-            <img src="img/pomodoroClock.png">
-            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/">Pomodoro Clock</a></h4>
+          <div class="col-md-4 trans">
+            <a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank"><img src="img/pomodoroClock.png"></a>
+            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank">Pomodoro Clock</a></h4>
             <p>
               Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
               ajustando sus atributos CSS según fuese necesario.
             </p>
           </div>
-        <div class="col-sm-4">
-            <img src="img/wikipediaViewer.png">
-            <h4><a href="https://ricardoblanco95.github.io/wikipediaViewer/">Wikipedia Viewer</a></h4>
+        <div class="col-md-4 trans">
+            <a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank"><img src="img/wikipediaViewer.png"></a>
+            <h4><a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank">Wikipedia Viewer</a></h4>
             <p>
               Buscador de artículos de Wikipedia. Se dispone un campo de texto para introducir el nombre 
               del artículo deseado y un botón llamado "GO RANDOM!" que abre en una nueva pestaña del navegador 
@@ -192,35 +192,38 @@
             </p>
           </div>
         </div>
-        <div class="row">
-         <div class="col-sm-6">
-            <img src="img/tictacToe.png"> 
-            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Tic Tac Toe</a></h4>
+        <div class="row secondRow" style="margin-top: 10px;">
+         <div class="col-md-6 trans">
+            <a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank"><img src="img/tictacToe.png"></a> 
+            <h4><a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank">Tic Tac Toe</a></h4>
             <p>
-              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
-              para el ajuste de los botones y pantalla. 
+              Juego de "La Vieja" (Tic Tac Toe) elaborado haciendo uso de jQuery y Bootstrap.
             </p>
           </div>
-          <div class="col-sm-6">
-            <img src="img/simonGame.png">
-            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/">Simon Game</a></h4>
+          <div class="col-md-6 trans">
+            <a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank"><img src="img/simonGame.png"></a>
+            <h4><a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank">Simon Game</a></h4>
             <p>
-              Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
-              ajustando sus atributos CSS según fuese necesario.
+              Adaptación del juego de Simon (Simon Game en inglés) creado por Ralph Baer y Howard J. Morrison en 1978,
+              elaborado haciendo uso de jQuery y Bootstrap.
             </p>
           </div>
         </div>
         <div class="typeOfProject">
-          <h3>
+          <h3> 
             SITIOS WEB 
           </h3>
         </div>
-        <div class="websites">
-          <img src="img/portalS7.png"> 
-          <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/">Tic Tac Toe</a></h4>
+        <div class="websites trans">
+          <a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank"><img src="img/portalS7.png"></a> 
+          <h4><a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank">
+            Portal Web destinado a los autómatas S7-1200 y S7-1500 de Siemens
+          </a></h4>
+          <h5><a href="https://auto1215.000webhostapp.com/" target="_blank">
+            (Enlace secundario)
+          </a></h5>
           <p>
-            Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework bootstrap
-            para el ajuste de los botones y pantalla. 
+            Portal web dirigido elaborado usando Wordpress a la formación teórico-práctica de los autómatas S7-1200 y S7-1500 en la cátedra de Automatización Industrial en la Escuela de Ingeniería Eléctrica perteneciente a la Universidad de Carabobo. Dispone de formulario para registro de nuevos usuarios y secciones disponibles únicamente a usuarios ya registrados.
           </p>
         </div>  
       </div>
@@ -228,7 +231,7 @@
  
   <!-- CONTACT SECTION -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- CONTACTO -&gt;</h3>
     <p>Lets get in touch and talk about your next project.</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
