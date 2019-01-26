@@ -350,6 +350,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .col-md-6 img, .col-md-4 img, .websites img{
 	display: block;
 	margin: 0 auto;
+	padding-top: 5px;
 }
 
 .col-md-6 h4, .col-md-4 h4, .websites h4, .websites h5{
@@ -365,10 +366,16 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .col-md-6 p, .col-md-4 p{
 	padding: 0 30px;
+	padding-bottom: 15px;
+}
+
+.websites{
+	margin: 0 18%;
 }
 
 .websites p{
-	padding: 0 300px;
+	padding: 0 100px;
+	padding-bottom: 15px;
 }
 
 .col-md-6 p, .col-md-4 p, .websites p{
@@ -377,9 +384,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 @media screen and (max-width: 768px){
+	.col-md-6 img, .col-md-4 img, .websites img{
+		padding-top: 0px;
+	}
+
 	.col-md-6 p, .col-md-4 p, .websites p{
 		padding: 0;
 	}
+
+	.websites{
+	margin: 0;
+	}
+
 	.row.secondRow{
 		display: initial;
 		flex-wrap: nowrap;
