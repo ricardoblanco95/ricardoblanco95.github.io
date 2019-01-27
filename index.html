@@ -13,6 +13,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src='js/script.js'></script>
 <script type="text/javascript" src="js/jquery.bcSwipe.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 <body onresize="hideDropdownMenu()">
 
 <!--'En Construccion' advise (Bootstrap Modal)-->
@@ -35,19 +36,19 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button" onclick="hideDropdownMenuOnClick()">RICARDO BLANCO</a>
+    <a href="#home" class="w3-bar-item w3-button navBarFonts myName" onclick="hideDropdownMenuOnClick()">RICARDO BLANCO</a>
     <!-- Float links to the right. Hide them on mdall screens -->
     <div id="navBar" class="w3-right NONEw3-hide-mdall">
-      <a href="#projects" class="w3-bar-item w3-button w3-hide-mdall">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-mdall">About</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-mdall">Contact</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">Contact</a>
       <a href="javascript:void(0)" class="dropdownIcon" onclick="responsiveNavBar()">&#9776;</a>
     </div>
   </div>
   <div id="divDropdown" class="dropdownMenu">
-      <div onclick="window.location='#projects'; hideDropdownMenuOnClick()">Projects</div>
-      <div onclick="window.location='#about'; hideDropdownMenuOnClick()">About</div>
-      <div onclick="window.location='#contact'; hideDropdownMenuOnClick()">Contact</div>
+      <div onclick="window.location='#projects'; hideDropdownMenuOnClick()" class="navBarFonts">Projects</div>
+      <div onclick="window.location='#about'; hideDropdownMenuOnClick()" class="navBarFonts">About</div>
+      <div onclick="window.location='#contact'; hideDropdownMenuOnClick()" class="navBarFonts">Contact</div>
   </div>
 </div>
 
@@ -120,7 +121,7 @@
 
   <!-- Studies -->
   <div class="w3-container w3-padding-32 titles" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- ESTUDIOS -&gt;</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">ESTUDIOS</h3>
   </div>
   <div class="container">
     <div class="row estudios">
@@ -169,7 +170,7 @@
  
   <!-- Projects Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">&lt;- PROYECTOS -&gt;</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">PROYECTOS</h3>
       <div class="container">
         <div class="typeOfProject">
           <h3>

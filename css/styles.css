@@ -243,6 +243,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /*---------------------------------------------------------------*/
 
 /*RESPONSIVE NAVBAR STYLING*/ 
+.navBarFonts{
+	font-family: "Raleway", sans-serif;	
+}
+
 .dropdownMenu{
 	display: none;
 }
@@ -283,17 +287,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*SECTIONS STYLING*/
 .titles{
+	font-family: "Raleway", sans-serif;
+	font-size: 50px;	
+	font-weight: bold;
 	color: #00056C; 
 	text-align: center;
-	font-size: 50px;
 }
-
 .estudios{
 	padding: 0 16px;
 }
 
-.estudios h3{
-	font-weight: bold;
+.estudios div h3{
+	font-family: "Raleway", sans-serif; 
 	text-align: center;
 }
 
@@ -311,10 +316,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .location{
+	font-family: "Raleway", sans-serif;
 	font-size: 17px;
 }
 
 .description{
+	font-family: "Raleway", sans-serif;
 	font-size: 13px;
 	display: block;
 	padding: 5px 0;
