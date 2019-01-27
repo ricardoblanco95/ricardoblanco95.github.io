@@ -1,0 +1,1 @@
+ $("#slider").bcSwipe({ threshold: 50 });
