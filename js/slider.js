@@ -1,1 +1,4 @@
- $("#slider").bcSwipe({ threshold: 50 });
+ $(document).ready(function(){
+ 	$("#slider").bcSwipe({ threshold: 20 });
+ });
+ 
