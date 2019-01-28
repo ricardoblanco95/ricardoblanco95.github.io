@@ -243,6 +243,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /*---------------------------------------------------------------*/
 
 /*RESPONSIVE NAVBAR STYLING*/ 
+.myName{
+	font-family: "Raleway";
+	font-weight: bold;
+ 	text-decoration: none !important;
+ 	color:#1f1f1f;
+}
+
 .navBarFonts{
 	font-family: "Raleway", sans-serif;	
 }
@@ -253,7 +260,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .dropdownIcon{
 	display: none;
-	text-decoration: none;
+	
 }
 
 @media screen and (max-width: 600px){
@@ -276,12 +283,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	}
  
 	.dropdownIcon{
+		font-size: 25px;
 		display: block;
 		float: right;
 		position: absolute;
+		text-decoration: none!important;
+		user-select: none !important;
+		color:#1f1f1f;
 		right: 0;
-		top: 0; 
+		top: 0px; 
 		padding: 8px 16px;
+	}
+
+	.dropdownIcon:visited, .dropdownIcon:hover, .dropdownIcon:active{
+		color:#1f1f1f;
 	}
 }
 
@@ -408,7 +423,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .projectDescription p{
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-size: 25px;
 	text-align: center;
 	padding: 0 150px;
@@ -444,6 +459,35 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	margin: 0 auto;
 }
 
+.infoList{
+	font-family: "Raleway",sans-serif;
+	font-size: 20px;
+	line-height: 40px;
+	list-style: none;
+	color: white;
+	padding-top: 80px;
+	padding-left: 60px;
+}
+
+.socialIcons{
+	font-size: 25px;
+}
+
+.socialIcons a i{
+	text-decoration: none;
+	user-select: none;
+	color: white;
+}
+
+.footerStyle{
+	font-family: "Raleway";
+}
+
+.footerStyle span{
+	color: #24478b; 
+}
+
+
 @media screen and (max-width: 768px){
 	.col-md-6 img, .col-md-4 img, .websites img{
 		padding-top: 0px;
@@ -454,13 +498,24 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	}
 
 	.websites{
-	margin: 0;
+		margin: 0;
 	}
 
 	.row.secondRow{
 		display: initial;
 		flex-wrap: nowrap;
 	}  
+
+	.col-md-6 form{  
+		padding: 0 20px; 
+	}
+
+	.infoList{
+		font-size: 3.5vw;
+		text-align: center;
+		padding-left: 0;
+		padding-top: 10px;
+	}
 }
 
 @media screen and (max-width: 600px){

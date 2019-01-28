@@ -1,288 +1,273 @@
 <!DOCTYPE html>
 <html>
-<title>Ricardo Blanco Dias</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css" type="text/css">
-<link rel="stylesheet" href="css/slider.css" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"> 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src='js/script.js'></script>
-<script type="text/javascript" src="js/jquery.bcSwipe.min.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
+<head>
+  <title>Ricardo Blanco Dias</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/slider.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src='js/script.js'></script>
+  <script type="text/javascript" src="js/jquery.bcSwipe.min.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+</head>  
 <body onresize="hideDropdownMenu()">
-
-<!--'En Construccion' advise (Bootstrap Modal)-->
-<div id="advise" class="modal fade" role="dialog" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">¡EN CONSTRUCCIÓN!</h3>
-      </div>
-      <div class="modal-body">
-        <p>El portafolio aun se encuentra en desarrollo. Disculpe.</p>
-      </div>
-      <div class="modal-footer" style="width: 100%;">
-        <button type="button" class="btn btn-danger" data-dimdiss="modal" style="display: block; margin: 0 auto;">Cerrar</button>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-car">
+      <a href="#home" class="w3-bar-item navBarFonts myName" onclick="hideDropdownMenuOnClick()">RICARDO<span style="color: white; background-color: #24478b; padding: 5px 5px">BLANCO</span></a>
+      <!-- Float links to the right. Hide them on mdall screens -->
+      <div id="navBar" class="w3-right NONEw3-hide-mdall">
+        <a href="#studies" class="w3-wide w3-bar-item w3-button w3-hide-mdall navBarFonts">Estudios</a>
+        <a href="#projects" class="w3-wide w3-bar-item w3-button w3-hide-mdall navBarFonts">Proyectos</a>
+        <a href="#contact" class="w3-wide w3-bar-item w3-button w3-hide-mdall navBarFonts">Contacto</a>
+        <a href="javascript:void(0)" class="dropdownIcon" onclick="responsiveNavBar()">&#9776;</a>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button navBarFonts myName" onclick="hideDropdownMenuOnClick()">RICARDO BLANCO</a>
-    <!-- Float links to the right. Hide them on mdall screens -->
-    <div id="navBar" class="w3-right NONEw3-hide-mdall">
-      <a href="#projects" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">About</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-mdall navBarFonts">Contact</a>
-      <a href="javascript:void(0)" class="dropdownIcon" onclick="responsiveNavBar()">&#9776;</a>
-    </div>
-  </div>
-  <div id="divDropdown" class="dropdownMenu">
-      <div onclick="window.location='#projects'; hideDropdownMenuOnClick()" class="navBarFonts">Projects</div>
-      <div onclick="window.location='#about'; hideDropdownMenuOnClick()" class="navBarFonts">About</div>
-      <div onclick="window.location='#contact'; hideDropdownMenuOnClick()" class="navBarFonts">Contact</div>
-  </div>
-</div>
-
-<!-- Slider -->
-<div id="slider" class="carousel slide" data-ride="carousel">
-  <!-- Indicators in the bottom -->
-  <ol class="carousel-indicators">
-    <li data-target="#slider" data-slide-to="0" class="active"></li>
-    <li data-target="#slider" data-slide-to="1"></li>
-    <li data-target="#slider" data-slide-to="2"></li>
- </ol>
-
-  <!-- Main wrapper -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="profileContainer">
-        <img src="img/profile1.jpg"> 
-        <h3>RICARDO BLANCO DIAS</h3>
-        <h4>Ingeniero Electricista / Programador Web Jr.</h4>
-      </div>
-      <div class="parallaxBack" style='background-image:url("img/001.jpg");'></div>
-     <!--<img id="slideBackground" src="img/001.jpg">-->
-    </div>
-
-    <div class="item">
-      <div class="profileContainer">
-        <p>
-          Mi nombre es <strong>Ricardo Blanco</strong>,
-          tengo 24 años de edad, soy
-          Ingeniero Electricista egresado de
-          la Universidad de Carabobo y
-          Programador Web Junior con
-          experiencia en los lenguajes <strong>HTML</strong>,
-          <strong>CSS</strong> y <strong>Javascript</strong>, así como el
-          manejo del CMS <strong>Wordpress</strong>.
-        </p>
-      </div>
-      <!--<img id="slideBackground" src="img/002.jpg">-->
-      <div class="parallaxBack" style='background-image:url("img/002.jpg");'></div>
-    </div>
-
-    <div class="item">
-      <div class="profileContainer alignText">
-        <h3>MIS HABILIDADES</h3>
-        <ul>
-          <li>Dominio de nuevas tecnologías y entorno digital.</li>
-          <li>Resolución de problemas.</li>
-          <li>Autodidacta.</li>
-          <li>Manejo de <strong>Git</strong>.</li>
-          <li>Experiencia en uso del CMS <strong>Wordpress</strong>.</li> 
-          <li>Manejo de la biblioteca <strong>jQuery</strong> y los frameworks <strong>AngularJS</strong> y <strong>Bootstrap</strong>.</li>
-        </ul>
-      </div>
-      <!--<img id="slideBackground" src="img/003.jpg">-->
-      <div class="parallaxBack" style='background-image:url("img/003.jpg");'></div>
+    <div id="divDropdown" class="dropdownMenu">
+        <div onclick="window.location='#studies'; hideDropdownMenuOnClick()" class="w3-wide navBarFonts">Estudios</div>
+        <div onclick="window.location='#projects'; hideDropdownMenuOnClick()" class="w3-wide navBarFonts">Proyectos</div>
+        <div onclick="window.location='#contact'; hideDropdownMenuOnClick()" class="w3-wide navBarFonts">Contact</div>
     </div>
   </div>
 
-  <!-- Next and Previous buttons -->
-  <a class="left carousel-control" href="#slider" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#slider" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> 
- 
-<!-- Content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+  <!-- Slider -->
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <!-- Indicators in the bottom -->
+    <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+   </ol>
 
-  <!-- Studies -->
-  <div class="w3-container w3-padding-32 titles" id="studies">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">ESTUDIOS</h3>
-  </div>
-  <div class="container">
-    <div class="row estudios">
-     <div class="col-md-6">
-       <h3>
-         ESTUDIOS UNIVERSITARIOS
-       </h3>
-       <img src="img/uc.png" id="logoUC">
-     </div> 
-     <div class="col-md-6">
-       <ul>
-         <li>
-           <span class="location">UNIVERSIDAD DE CARABOBO (2012-2018)</span>
-           <br>
-           <span class="description">Ingeniero Electricista (mención Sistemas y Automática)
-           egresado de la Universidad de Carabobo en Venezuela.</span>
-         </li>
-       </ul>
-     </div>
-    </div>
-    <div class="row estudios" style="margin-top: 20px;">
-     <div class="col-md-6">
-       <h3>
-         ESTUDIOS ADICIONALES
-       </h3>
-       <img src="img/fcc.jpg" height="171px" width="171px" id="logoFCC">
-     </div> 
-     <div class="col-md-6">
-       <ul>
-         <li>
-           <span class="location">FRONT END DEVELOPMENT (2017)
-            - FREECODECAMP</span>
-         </li>
-         <li>
-           <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
-            NIVEL BÁSICO (2018) - CENTECPRO VALENCIA</span>
-         </li>
-         <li>
-           <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
-            NIVEL AVANZADO (2018) - CENTECPRO VALENCIA</span>
-         </li>
-       </ul>
-     </div>
-    </div>
-  </div>
- 
-  <!-- Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-      <div class="projectDescription" style="background-image: url('img/projectBack2.jpg');">
-        <h3 class="w3-border-light-grey w3-padding-16 titles">PROYECTOS</h3>
-        <p>
-          Lista de proyectos más resaltantes que he realizado haciendo uso de las distintas librerías y frameworks disponibles para Javascript y sitios web desarrollados haciendo uso de algún CMS.
-        </p>
-      </div>
-      <div class="container">
-        <div class="typeOfProject">
-          <h3>
-             PROYECTOS INDIVIDUALES
-          </h3>
+    <!-- Main wrapper -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="profileContainer">
+          <img src="img/profile1.jpg"> 
+          <h3>RICARDO BLANCO DIAS</h3>
+          <h4>Ingeniero Electricista / Programador Web Jr.</h4>
         </div>
-        <div class="row firstRow">
-          <div class="col-md-4 trans">
-            <a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank"><img src="img/javascriptCalculator.png"></a> 
-            <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank">Javascript Calculator</a></h4>
-            <p>
-              Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework Bootstrap
-              para el ajuste de los botones y pantalla. 
-            </p>
-          </div>
-          <div class="col-md-4 trans">
-            <a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank"><img src="img/pomodoroClock.png"></a>
-            <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank">Pomodoro Clock</a></h4>
-            <p>
-              Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
-              ajustando sus atributos CSS según fuese necesario.
-            </p>
-          </div>
-        <div class="col-md-4 trans">
-            <a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank"><img src="img/wikipediaViewer.png"></a>
-            <h4><a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank">Wikipedia Viewer</a></h4>
-            <p>
-              Buscador de artículos de Wikipedia. Se dispone un campo de texto para introducir el nombre 
-              del artículo deseado y un botón llamado "GO RANDOM!" que abre en una nueva pestaña del navegador 
-              uno aleatorio.
-            </p>
-          </div>
-        </div>
-        <div class="row secondRow" style="margin-top: 10px;">
-         <div class="col-md-6 trans">
-            <a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank"><img src="img/tictacToe.png"></a> 
-            <h4><a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank">Tic Tac Toe</a></h4>
-            <p>
-              Juego de "La Vieja" (Tic Tac Toe) elaborado haciendo uso de jQuery y Bootstrap.
-            </p>
-          </div>
-          <div class="col-md-6 trans">
-            <a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank"><img src="img/simonGame.png"></a>
-            <h4><a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank">Simon Game</a></h4>
-            <p>
-              Adaptación del juego de Simon (Simon Game en inglés) creado por Ralph Baer y Howard J. Morrison en 1978,
-              elaborado haciendo uso de jQuery y Bootstrap.
-            </p>
-          </div>
-        </div>
-        <div class="typeOfProject">
-          <h3> 
-            SITIOS WEB 
-          </h3>
-        </div>
-        <div class="websites trans">
-          <a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank"><img src="img/portalS7.png"></a> 
-          <h4><a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank">
-            Portal Web destinado a los autómatas S7-1200 y S7-1500 de Siemens
-          </a></h4>
-          <h5><a href="https://auto1215.000webhostapp.com/" target="_blank">
-            (Enlace secundario)
-          </a></h5>
+        <div class="parallaxBack" style='background-image:url("img/001.jpg");'></div>
+       <!--<img id="slideBackground" src="img/001.jpg">-->
+      </div>
+
+      <div class="item">
+        <div class="profileContainer">
           <p>
-            Portal web elaborado usando Wordpress dirigido a la formación teórico-práctica de los autómatas S7-1200 y S7-1500 en la cátedra de Automatización Industrial de la Escuela de Ingeniería Eléctrica (Universidad de Carabobo). Dispone de formulario para registro de nuevos usuarios y secciones disponibles únicamente a usuarios ya registrados.
+            Mi nombre es <strong>Ricardo Blanco</strong>,
+            tengo 24 años de edad, soy
+            Ingeniero Electricista egresado de
+            la Universidad de Carabobo y
+            Programador Web Junior con
+            experiencia en los lenguajes <strong>HTML</strong>,
+            <strong>CSS</strong> y <strong>Javascript</strong>, así como el
+            manejo del CMS <strong>Wordpress</strong>.
           </p>
-        </div>  
+        </div>
+        <!--<img id="slideBackground" src="img/002.jpg">-->
+        <div class="parallaxBack" style='background-image:url("img/002.jpg");'></div>
+      </div>
+
+      <div class="item">
+        <div class="profileContainer alignText">
+          <h3>MIS HABILIDADES</h3>
+          <ul>
+            <li>Dominio de nuevas tecnologías y entorno digital.</li>
+            <li>Resolución de problemas.</li>
+            <li>Autodidacta.</li>
+            <li>Manejo de <strong>Git</strong>.</li>
+            <li>Experiencia en uso del CMS <strong>Wordpress</strong>.</li> 
+            <li>Manejo de la biblioteca <strong>jQuery</strong> y los frameworks <strong>AngularJS</strong> y <strong>Bootstrap</strong>.</li>
+          </ul>
+        </div>
+        <!--<img id="slideBackground" src="img/003.jpg">-->
+        <div class="parallaxBack" style='background-image:url("img/003.jpg");'></div>
       </div>
     </div>
- 
-  <!-- CONTACT SECTION -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-light-grey w3-padding-16 titles contactTitle">CONTACTO</h3>
+
+    <!-- Next and Previous buttons -->
+    <a class="left carousel-control" href="#slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div> 
+   
+  <!-- Content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Studies -->
+    <div class="w3-container w3-padding-32 titles" id="studies">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 titles">ESTUDIOS</h3>
+    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <form id="form" action="mailto:ricardoblanco.work@gmail.com?subject=Mensaje desde portafolio" target="_top" class="form-group">
-            <span class="inputName">Nombre</span>
-            <input class="form-control" type="text" name="Nombre" required placeholder="Nombre"> 
-            <span class="inputName">Apellido</span>
-            <input class="form-control" type="text" name="Apellido" required placeholder="Apellido">
-            <span class="inputName">Email</span>
-            <input class="form-control" type="Email" name="Email" required placeholder="ejemplo@deEmail.com">
-            <span class="inputName">Fecha</span>
-            <input class="form-control" type="date" name="Fecha" required>
-            <input type="submit" value="Enviar">
-          </form> 
+      <div class="row estudios">
+       <div class="col-md-6">
+         <h3>
+           ESTUDIOS UNIVERSITARIOS
+         </h3>
+         <img src="img/uc.png" id="logoUC">
+       </div> 
+       <div class="col-md-6">
+         <ul>
+           <li>
+             <span class="location">UNIVERSIDAD DE CARABOBO (2012-2018)</span>
+             <br>
+             <span class="description">Ingeniero Electricista (mención Sistemas y Automática)
+             egresado de la Universidad de Carabobo en Venezuela.</span>
+           </li>
+         </ul>
+       </div>
+      </div>
+      <div class="row estudios" style="margin-top: 20px;">
+       <div class="col-md-6">
+         <h3>
+           ESTUDIOS ADICIONALES
+         </h3>
+         <img src="img/fcc.jpg" height="171px" width="171px" id="logoFCC">
+       </div> 
+       <div class="col-md-6">
+         <ul>
+           <li>
+             <span class="location">FRONT END DEVELOPMENT (2017)
+              - FREECODECAMP</span>
+           </li>
+           <li>
+             <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
+              NIVEL BÁSICO (2018) - CENTECPRO VALENCIA</span>
+           </li>
+           <li>
+             <span class="location">PROGRAMACIÓN WEB PARA DISEÑADORES
+              NIVEL AVANZADO (2018) - CENTECPRO VALENCIA</span>
+           </li>
+         </ul>
+       </div>
+      </div>
+    </div>
+   
+    <!-- Projects Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+        <div class="projectDescription" style="background-image: url('img/projectBack2.jpg');">
+          <h3 class="w3-border-light-grey w3-padding-16 titles">PROYECTOS</h3>
+          <p>
+            Lista de proyectos más resaltantes que he realizado haciendo uso de las distintas librerías y frameworks disponibles para Javascript y sitios web desarrollados haciendo uso de algún CMS.
+          </p>
         </div>
-        <div class="col-md-6">
-          
+        <div class="container">
+          <div class="typeOfProject">
+            <h3>
+               PROYECTOS INDIVIDUALES
+            </h3>
+          </div>
+          <div class="row firstRow">
+            <div class="col-md-4 trans">
+              <a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank"><img src="img/javascriptCalculator.png"></a> 
+              <h4><a href="https://ricardoblanco95.github.io/javascriptCalculator-/" target="_blank">Javascript Calculator</a></h4>
+              <p>
+                Calculadora elaborada en Javascript haciendo uso de la librería jQuery y el framework Bootstrap
+                para el ajuste de los botones y pantalla. 
+              </p>
+            </div>
+            <div class="col-md-4 trans">
+              <a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank"><img src="img/pomodoroClock.png"></a>
+              <h4><a href="https://ricardoblanco95.github.io/pomodoroClock/" target="_blank">Pomodoro Clock</a></h4>
+              <p>
+                Reloj pomodoro sencillo. Con ayuda de jQuery, se llevó a cabo la animación de la barra de progreso
+                ajustando sus atributos CSS según fuese necesario.
+              </p>
+            </div>
+          <div class="col-md-4 trans">
+              <a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank"><img src="img/wikipediaViewer.png"></a>
+              <h4><a href="https://ricardoblanco95.github.io/wikipediaViewer/" target="_blank">Wikipedia Viewer</a></h4>
+              <p>
+                Buscador de artículos de Wikipedia. Se dispone un campo de texto para introducir el nombre 
+                del artículo deseado y un botón llamado "GO RANDOM!" que abre en una nueva pestaña del navegador 
+                uno aleatorio.
+              </p>
+            </div>
+          </div>
+          <div class="row secondRow" style="margin-top: 10px;">
+           <div class="col-md-6 trans">
+              <a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank"><img src="img/tictacToe.png"></a> 
+              <h4><a href="https://ricardoblanco95.github.io/ticTacToe/" target="_blank">Tic Tac Toe</a></h4>
+              <p>
+                Juego de "La Vieja" (Tic Tac Toe) elaborado haciendo uso de jQuery y Bootstrap.
+              </p>
+            </div>
+            <div class="col-md-6 trans">
+              <a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank"><img src="img/simonGame.png"></a>
+              <h4><a href="https://ricardoblanco95.github.io/simonGame-/" target="_blank">Simon Game</a></h4>
+              <p>
+                Adaptación del juego de Simon (Simon Game en inglés) creado por Ralph Baer y Howard J. Morrison en 1978,
+                elaborado haciendo uso de jQuery y Bootstrap.
+              </p>
+            </div>
+          </div>
+          <div class="typeOfProject">
+            <h3> 
+              SITIOS WEB 
+            </h3>
+          </div>
+          <div class="websites trans">
+            <a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank"><img src="img/portalS7.png"></a> 
+            <h4><a href="http://www.ing.uc.edu.ve/electrica/sa/auto1215/wordpress/" target="_blank">
+              Portal Web destinado a los autómatas S7-1200 y S7-1500 de Siemens
+            </a></h4>
+            <h5><a href="https://auto1215.000webhostapp.com/" target="_blank">
+              (Enlace secundario)
+            </a></h5>
+            <p>
+              Portal web elaborado con Wordpress dirigido a la formación teórico-práctica de los autómatas S7-1200 y S7-1500 en la cátedra de Automatización Industrial de la Escuela de Ingeniería Eléctrica (Universidad de Carabobo). Dispone de formulario para registro de nuevos usuarios y secciones disponibles únicamente a usuarios ya registrados.
+            </p>
+          </div>  
+        </div>
+      </div>
+   
+    <!-- CONTACT SECTION -->
+    <div class="w3-container w3-padding-32" id="contact">
+      <h3 class="w3-border-light-grey w3-padding-16 titles contactTitle">CONTACTO</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form id="form" action="mailto:ricardoblanco.work@gmail.com?subject=Mensaje desde portafolio" target="_top" class="form-group">
+              <span class="inputName">Nombre</span>
+              <input class="form-control" type="text" name="Nombre" required placeholder="Nombre"> 
+              <span class="inputName">Apellido</span>
+              <input class="form-control" type="text" name="Apellido" required placeholder="Apellido">
+              <span class="inputName">Email</span>
+              <input class="form-control" type="Email" name="Email" required placeholder="ejemplo@deEmail.com">
+              <span class="inputName">Asunto</span>
+              <input class="form-control" type="texto" name="Asunto" required placeholder="Asunto del mensaje">
+              <span class="inputName">Fecha</span>
+              <input class="form-control" type="date" name="Fecha" required>
+              <input type="submit" value="Enviar" class="btn btn-primary">
+            </form> 
+          </div>
+          <div class="col-md-6">
+            <ul class="infoList">
+              <li>Tlf: +54 11 2605-5025</li>
+              <li>Email: ricardoblanco.work@gmail.com</li>
+              <li>Ubicación: CABA, Argentina</li>
+              <li>Social:&nbsp;&nbsp;<span class="socialIcons"><a href="https://github.com/ricardoblanco95" target="_blank"><i class="fa fa-github"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/ricardo-blanco-dias-381878177/" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;<a href="https://www.instagram.com/ricardoblanco95/" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;<a href="https://www.twitter.com/ricardoblanco95/" target="_blank"><i class="fa fa-twitter"></i></a></span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  <!-- END -->
   </div>
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Desarrollado por <span title="W3.CSS" target="_blank" class="w3-hover-text-green">Ricardo Blanco Dias</span></p>
-</footer>
-
+   
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16 footerStyle">
+    <p>Desarrollado por <span>Ricardo Blanco Dias</span></p>
+  </footer>
 </body>
 </html>
