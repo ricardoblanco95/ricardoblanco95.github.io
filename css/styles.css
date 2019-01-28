@@ -328,6 +328,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 .typeOfProject{
+	margin-top: 25px;
 	margin-bottom: 30px;
 }
 
@@ -412,6 +413,36 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	text-align: center;
 	padding: 0 150px;
 }  
+
+#contact{
+	background: #1f1f1f;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contactTitle{
+	color: white;
+}
+
+.inputName{
+	color: white;
+}
+
+.inputName::after{
+	content: "*";
+	color: red;
+}
+
+.col-md-6 form input{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.col-md-6 form button{
+	display: block;
+	margin: 0 auto;
+}
 
 @media screen and (max-width: 768px){
 	.col-md-6 img, .col-md-4 img, .websites img{
