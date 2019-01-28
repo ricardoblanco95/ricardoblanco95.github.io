@@ -26,3 +26,8 @@ var hideDropdownMenuOnClick = function(){
 	flag = false;
 }
 
+var submitForm = function(){
+	document.getElementById("form").submit();
+	alert("ok");
+};
+
